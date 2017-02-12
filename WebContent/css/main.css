@@ -52,7 +52,8 @@ html{
     font-size: 20px  !important;  
     overflow: hidden;  
     outline: 0;  
-    -webkit-text-size-adjust:none;  
+    -webkit-text-size-adjust:none; 
+    font-family: "Source Han Sans",Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei",SimSun,Heiti,sans-serif; 
 }
 
 @media only screen and (min-width: 401px){
@@ -95,9 +96,6 @@ nav a{
 	width:125px;
 	padding-right:15px;
 }
-.container-fluid{
-	width:1170px;
-}
 #nav_right li a{
 	padding-left:4px;
 	padding-right:4px;
@@ -105,3 +103,32 @@ nav a{
 .navbar-collapse{
     padding-right:22px !important;
 }
+
+/*denglu*/
+.subtitle{
+	padding:.6rem 0 1.5rem 0;
+}
+.mainbody{
+	padding-left:22px !important;
+}
+.inputbody{
+	padding-left:0px !important;
+}
+.dengluOrzhuce{
+	margin-bottom:.8rem;
+}
+.dengluOrzhuce a{
+    color:#999;
+}
+.dengluOrzhuce li.active a{
+	color:#a94442 !important;
+}
+.dengluOrzhuce li a:hover{
+	background-color:#fff !important;
+	border:0;
+	color:#999;
+}
+.input-text, .btn-dengluzhuce{
+	height:1rem !important;
+}
+

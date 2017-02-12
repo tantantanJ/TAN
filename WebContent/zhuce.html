@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="css/main.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+</head>
+<body>
+	<div id="head_included"></div>
+	<div class="container">
+	    <div class="row mainbody">
+		    <h1 class="subtitle">登录即可免费享受官网提供的所有服务</h1>
+		    <div class="dengluOrzhuce">
+			    <ul class="nav nav-tabs">
+					<li><a href="denglu.html">登录</a></li>
+					<li class="active"><a href="zhuce.html">注册</a></li>
+		        </ul>
+	        </div>
+	        <div id="login_hint" class="tishi">
+					            	&nbsp;
+			</div>
+			<div class="inputbody">
+		        <form role="form" action="register?action=register" method="post" id="regForm" onsubmit="javascript: return valid.check(this);" autocomplete="off">
+		            <fieldset>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="邮箱" id="ZhuCeYouXiang" name="ZhuCeYouXiang" />
+		                    </div>
+		                    <div class="col-md-6" id="ZhuCeYouXiangTip">xsaxsx</div>
+		                </div>
+		                <div class="row" id="MiMaRow">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;密码(6位以上数字字母)" id="MiMa" name="MiMa" />
+		                    </div>
+		                    <div class="col-md-6" id="MiMaTip">xsaxsx</div>
+		                </div>
+	                    <div class="checkbox">
+	                        <label>
+	                            <small><input type="checkbox" name="rememberMe" checked /><strong style="color:#999;">记住我的登录状态</strong></small>
+	                        </label>
+	          	            <div style="float:right;" id="resendActiveMail" >
+	                   	        <a href="javascript:void resendActiveMail();" ><small><strong>重发注册激活邮件</strong></small></a>
+	                        </div>
+	                    </div>
+		                <button id="miscFunc" type="submit" class="btn btn-lg btn-danger btn-block btn-dengluzhuce">登录</button>
+		            </fieldset>
+		        </form>
+		    </div>
+	    </div>
+	</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
