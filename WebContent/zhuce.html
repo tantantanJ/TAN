@@ -31,19 +31,96 @@
 		                </div>
 		                <div class="row" id="MiMaRow">
 		                    <div class="form-group input-area col-md-6">
-		                        <input class="form-control input-text" placeholder="&nbsp;密码(6位以上数字字母)" id="MiMa" name="MiMa" />
+		                        <input class="form-control input-text" placeholder="&nbsp;密码(6位以上数字字母)" type="password" id="MiMa" name="MiMa" />
 		                    </div>
 		                    <div class="col-md-6" id="MiMaTip">xsaxsx</div>
 		                </div>
-	                    <div class="checkbox">
-	                        <label>
-	                            <small><input type="checkbox" name="rememberMe" checked /><strong style="color:#999;">记住我的登录状态</strong></small>
-	                        </label>
-	          	            <div style="float:right;" id="resendActiveMail" >
-	                   	        <a href="javascript:void resendActiveMail();" ><small><strong>重发注册激活邮件</strong></small></a>
-	                        </div>
-	                    </div>
-		                <button id="miscFunc" type="submit" class="btn btn-lg btn-danger btn-block btn-dengluzhuce">登录</button>
+		                <div class="row" id="repasswordRow">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;再次输入密码" type="password" id="repassword" name="repassword" />
+		                    </div>
+		                    <div class="col-md-6" id="repasswordTip">xsaxsx</div>
+		                </div>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;显示名称" id="XingMing" name="XingMing" />
+		                    </div>
+		                    <div class="col-md-6" id="XingMingTip">xsaxsx</div>
+		                </div>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;手机" id="Mobile" name="Mobile" />
+		                    </div>
+		                    <div class="col-md-6" id="MobileTip">xsaxsx</div>
+		                </div>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;您所在的公司" id="GongSiMingCheng" name="GongSiMingCheng" />
+		                    </div>
+		                    <div class="col-md-6" id="GongSiMingChengTip">xsaxsx</div>
+		                </div>
+		                <div class="row">
+		                    <div class="col-md-3 form-group">
+    				            <select id="YeWuLeiBie" name="YeWuLeiBie" class="form-control">
+								    <option class="form-control" value="" >您公司的主要业务</option>
+									<option class="form-control" value="地板经销商">&nbsp;地板经销商</option>
+									<option class="form-control" value="地板制造商">&nbsp;地板制造商</option>
+									<option class="form-control" value="软件公司">&nbsp;软件公司</option>
+									<option class="form-control" value="其他">&nbsp;其他</option>
+					     	    </select>
+		                    </div>
+		                    <div class="col-md-3 form-group">
+                                <select id="ZhiWu" name="ZhiWu" class="form-control">
+								    <option class="form-control" value="" >您在公司的职务</option>
+									<option class="form-control" value="总经理">&nbsp;总经理</option>
+									<option class="form-control" value="部门经理">&nbsp;部门经理</option>
+									<option class="form-control" value="店长">&nbsp;店长</option>
+									<option class="form-control" value="员工">&nbsp;员工</option>
+							    </select>
+		                    </div>
+		                </div>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;代理品牌" id="ZhuYaoPinPai" name="ZhuYaoPinPai" />
+		                    </div>
+		                    <div class="col-md-6" id="ZhuYaoPinPaiTip">xsaxsx</div>
+		                </div>
+		                <div class="row">
+		                    <div class="col-md-6 form-group">
+                                <select id="MenDianGuiMo" name="MenDianGuiMo" class="form-control">
+									<option value="">您公司的销售门店数量</option>
+									<option value="10">&nbsp;1~10家店</option>
+									<option value="20">&nbsp;11~20家店</option>
+									<option value="50">&nbsp;21~50家店</option>
+									<option value="100">&nbsp;50家店以上</option>
+								</select>
+		                    </div>
+		                    <div class="col-md-6" id="MenDianGuiMoTip"></div>
+		                </div>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;公司地址" id="DiZhi" name="DiZhi" />
+		                    </div>
+		                    <div class="col-md-6" id="DiZhiTip">xsaxsx</div>
+		                </div>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;公司电话" id="DianHua" name="DianHua" />
+		                    </div>
+		                    <div class="col-md-6" id="DianHuaTip">xsaxsx</div>
+		                </div>
+		                <div class="row">
+		                    <div class="form-group input-area col-md-6">
+		                        <input class="form-control input-text" placeholder="&nbsp;公司传真" id="ChuanZhen" name="ChuanZhen" />
+		                    </div>
+		                    <div class="col-md-6" id="ChuanZhenTip">xsaxsx</div>
+		                </div>
+		                
+		                <div class="row">
+			                <div class="col-md-6">
+			                    <button id="miscFunc" type="submit" class="btn btn-lg btn-danger btn-block btn-dengluzhuce">登录</button>
+			                </div>
+		                </div>
 		            </fieldset>
 		        </form>
 		    </div>
