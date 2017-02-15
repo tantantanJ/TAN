@@ -40,8 +40,8 @@ public class LoginCheck extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		String clientIP = Utils.getIpAddr(request);
 		String action = request.getParameter("action");
+		//request.getHeader("X-Requested-With")为 null，则为传统同步请求；为 XMLHttpRequest，则为 Ajax 异步请求
 		boolean reqFromAjax =  request.getHeader("X-Requested-With")!=null && request.getHeader("X-Requested-With").equals("XMLHttpRequest");
-
 		String strLoginCode = ""; 
 		String strPwd = request.getParameter("password");
 		
