@@ -45,6 +45,18 @@
 	</div>
 <script src="js/jquery-3.1.1.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	if (GetQueryString("result") == "error") {
+		$("#login_hint").html('账号或密码错误');
+	} else if (GetQueryString("result") == "noactive") {
+		$("#login_hint").html('账号未激活。请登录邮箱激活账号。')
+	} else {
+		$("login_hint").html('&nbsp')
+	};
+})
+</script>
 </body>
 </html>
