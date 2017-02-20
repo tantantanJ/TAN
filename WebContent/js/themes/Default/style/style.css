@@ -1,0 +1,133 @@
+.onLoad
+{
+    background:#E9FFEB url(../images/onLoad.gif) no-repeat 3px 3px;
+    padding-left:25px;
+/* 	font-size: 12px; */
+	line-height:22px; 
+	vertical-align:middle;
+	padding:8px 0 0 14px;
+	color:#A94442;
+} 
+
+.onShow
+{
+    background:url(../images/onShow.gif) no-repeat; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	padding:8px 0 0 14px;
+	color:#A94442;
+	width:auto !important
+}
+
+.onCorrect{ 
+	display:inline-block; 
+	height:22px; 
+	background:url(../images/reg-menu.gif) no-repeat 0px -22px; 
+	padding-left:15px; 
+	margin-left:-30px; 
+	vertical-align:middle; 
+	padding-right:5px;
+	margin-top:5px;
+	padding:8px 0 0 14px;
+	color:#A94442;
+}
+
+
+.onError .onFocus p
+{
+	list-style-type:none;
+	list-style-image:none;
+	line-height : 2;
+	padding-top:20px;
+	color:#A94442;
+}
+.onError .onFocus span
+{
+	color : #000;
+	font-size : 12px;
+	color:#A94442;
+}
+
+
+.onFocus{ 
+/* 	width:287px;  */
+/* 	height:20px;  */
+	padding-top:3px; 
+	left:0px;top:0px;
+	padding:8px 0 0 14px;
+	margin::0px;
+	color:#A94442;
+}
+
+.onFocus_top
+{
+
+	display:block;
+/* 	width:287px; */
+	padding:8px 10px 0 40px;
+	min-height:15px;
+	_height:10px;
+	background:url(../images/verification-ui6.gif) no-repeat 0px 0;
+	color:#A94442;
+}
+.onFocus_bot
+{
+	display:block;
+/* 	width:287px; */
+	height:5px;
+	background:url(../images/verification-ui6.gif) no-repeat 0px -185px;
+	overflow:hidden;
+	color:#A94442;
+}
+
+
+
+.onError
+{ 
+padding-top:8px;
+color:#A94442;
+padding:8px 10px 0 40px;
+}
+
+.onError_top
+{ 
+	display:block; 
+/* 	width:287px;  */
+	padding:8px 10px 0 40px; 
+	min-height:15px; 
+	_height:10px; 
+	background:url(../images/verification-ui6.gif) no-repeat 0px -190px;
+	color:#A94442;
+}
+.onError_bot
+{ 
+	display:block; 
+/* 	width:287px;  */
+	height:5px; 
+	background:url(../images/verification-ui6.gif) no-repeat 0px -375px; 
+	overflow:hidden;
+	color:#A94442;
+}
+
+.input_public
+{
+	border:#C1C1C1 1px solid;
+/* 	font-size:14px; */
+/* 	line-height:20px;  */
+/* 	height:26px; */
+	padding-left:4px;
+	color:#A94442;
+}
+
+.input_error {
+	
+	background-color:#FBE2E2;border-color:#D28C8C;color:#A63B3B
+}
+
+.input_focus {
+    background-color:#FFC;border-color:#C6C69E
+}
+.input_correct {
+	background-color:#FBFBFB;color:#444
+}

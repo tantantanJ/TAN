@@ -18,49 +18,62 @@
 		        </ul>
 	        </div>
 	        <div id="login_hint" class="tishi">
-					            	&nbsp;
+			    &nbsp;
 			</div>
 			<div class="inputbody">
 		        <form role="form" action="register?action=register" method="post" id="regForm" onsubmit="javascript: return valid.check(this);" autocomplete="off">
 		            <fieldset>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="邮箱" id="ZhuCeYouXiang" name="ZhuCeYouXiang" />
 		                    </div>
-		                    <div class="col-md-6" id="ZhuCeYouXiangTip">xsaxsx</div>
+		                    <div class="col-md-6" id="ZhuCeYouXiangTip"></div>
 		                </div>
+		            </div>
+		            <div class="form-group">    
 		                <div class="row" id="MiMaRow">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;密码(6位以上数字字母)" type="password" id="MiMa" name="MiMa" />
 		                    </div>
-		                    <div class="col-md-6" id="MiMaTip">xsaxsx</div>
+		                    <div class="col-md-6" id="MiMaTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">    
 		                <div class="row" id="repasswordRow">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;再次输入密码" type="password" id="repassword" name="repassword" />
 		                    </div>
-		                    <div class="col-md-6" id="repasswordTip">xsaxsx</div>
+		                    <div class="col-md-6" id="repasswordTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">    
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;显示名称" id="XingMing" name="XingMing" />
 		                    </div>
-		                    <div class="col-md-6" id="XingMingTip">xsaxsx</div>
+		                    <div class="col-md-6" id="XingMingTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;手机" id="Mobile" name="Mobile" />
 		                    </div>
-		                    <div class="col-md-6" id="MobileTip">xsaxsx</div>
+		                    <div class="col-md-6" id="MobileTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;您所在的公司" id="GongSiMingCheng" name="GongSiMingCheng" />
 		                    </div>
-		                    <div class="col-md-6" id="GongSiMingChengTip">xsaxsx</div>
+		                    <div class="col-md-6" id="GongSiMingChengTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="col-md-3 form-group">
+		                    <div class="col-md-3">
     				            <select id="YeWuLeiBie" name="YeWuLeiBie" class="form-control">
 								    <option class="form-control" value="" >您公司的主要业务</option>
 									<option class="form-control" value="地板经销商">&nbsp;地板经销商</option>
@@ -69,7 +82,8 @@
 									<option class="form-control" value="其他">&nbsp;其他</option>
 					     	    </select>
 		                    </div>
-		                    <div class="col-md-3 form-group">
+		                    <div class="line"></div>
+		                    <div class="col-md-3">
                                 <select id="ZhiWu" name="ZhiWu" class="form-control">
 								    <option class="form-control" value="" >您在公司的职务</option>
 									<option class="form-control" value="总经理">&nbsp;总经理</option>
@@ -79,14 +93,18 @@
 							    </select>
 		                    </div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;代理品牌" id="ZhuYaoPinPai" name="ZhuYaoPinPai" />
 		                    </div>
-		                    <div class="col-md-6" id="ZhuYaoPinPaiTip">xsaxsx</div>
+		                    <div class="col-md-6" id="ZhuYaoPinPaiTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="col-md-6 form-group">
+		                    <div class="col-md-6">
                                 <select id="MenDianGuiMo" name="MenDianGuiMo" class="form-control">
 									<option value="">您公司的销售门店数量</option>
 									<option value="10">&nbsp;1~10家店</option>
@@ -97,24 +115,31 @@
 		                    </div>
 		                    <div class="col-md-6" id="MenDianGuiMoTip"></div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;公司地址" id="DiZhi" name="DiZhi" />
 		                    </div>
-		                    <div class="col-md-6" id="DiZhiTip">xsaxsx</div>
+		                    <div class="col-md-6" id="DiZhiTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;公司电话" id="DianHua" name="DianHua" />
 		                    </div>
-		                    <div class="col-md-6" id="DianHuaTip">xsaxsx</div>
+		                    <div class="col-md-6" id="DianHuaTip"> </div>
 		                </div>
+		            </div>
+		            <div class="form-group">
 		                <div class="row">
-		                    <div class="form-group input-area col-md-6">
+		                    <div class="input-area col-md-6">
 		                        <input class="form-control input-text" placeholder="&nbsp;公司传真" id="ChuanZhen" name="ChuanZhen" />
 		                    </div>
-		                    <div class="col-md-6" id="ChuanZhenTip">xsaxsx</div>
+		                    <div class="col-md-6" id="ChuanZhenTip"> </div>
 		                </div>
+		            </div>
 		                
 		                <div class="row">
 			                <div class="col-md-6">
@@ -129,10 +154,8 @@
 <script src="js/jquery-3.1.1.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript">
-    window.onload = function() {
-    	
-    }
-</script>
+<script src="js/formValidator-4.1.3.js"></script>
+<script src="js/formValidatorRegex.js"></script>
+<script src="js/zhuce.js"></script>
 </body>
 </html>

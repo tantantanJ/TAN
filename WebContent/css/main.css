@@ -86,6 +86,14 @@ html{
        width:100px !important;
     }
 }
+.line{
+	height:15px;
+}
+@media only screen and (min-width: 1000px){
+    .line{
+        height:0;
+	}
+}
 /* nav */
 nav a{
 	color:white !important;
@@ -128,6 +136,13 @@ nav a{
 	color:#999;
 }
 .input-text, .btn-dengluzhuce{
-	height:1rem !important;
+	height:40px !important;
 }
+.onError{
+    height:40px !important;
+    line-height:40px !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}
+
 
