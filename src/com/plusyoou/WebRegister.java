@@ -133,7 +133,7 @@ public class WebRegister extends HttpServlet{
 				  	content.append("感谢您对我们的关注与支持，欢迎您使用我们的产品与服务。<br>");
 				  	content.append("您注册的用户名是："+request.getParameter("XingMing") + "   密码是："+request.getParameter("MiMa"));
 				  	content.append("<h2>请点击下面的激活地址完成验证，激活地址只能使用一次，请尽快激活！</h2>");
-				  	content.append("<a style='font-size:16px;' href="+"'http://www.plusyoou.com/3c8eac13?k=")
+				  	content.append("<a style='font-size:16px;' href="+"'localhost:8080/TAN/3c8eac13?k=")
 				  		.append( yanzhengma +"'>")
 				  		.append("http://www.plusyoou.com/3c8eac13?k="+yanzhengma)
 				  		.append(""+"</a><br/><br/>")
