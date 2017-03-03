@@ -15,8 +15,8 @@ window.onload = function() {
     if (isXiuGai){
     	$('#MiMaRow').hide();
     	$('#repasswordRow').hide();
-    	docunemt.getElemnetById('regForm').action = "register?action=updateAcct";
-    	$('#formBtn').text('确认修改');
+    	document.getElementById('regForm').action = "register?action=updateAcct";
+    	$('#miscFunc').text('确认修改');
     	$('#ZhuCeYouXiang').val(getCookieContent('UserCode'));
     	$('#XingMing').val(getCookieContent('UserName'));
 		$("#ZhuCeYouXiang").attr('disabled', 'disabled');
@@ -25,7 +25,7 @@ window.onload = function() {
 			if($.trim(data) != 'notLogIn') {
 				var params = data.split('^');
 				for (var i = 0;i < params.length;i++) {
-					para = paras[i].split('~');
+					para = params[i].split('~');
 					$('[name="'+para[0]+'"]').val(para[1])
 				}
 			} else {

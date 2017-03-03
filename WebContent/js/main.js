@@ -1,6 +1,6 @@
 $(function(){
 	$("#head_included").load("head.html",function(){
-		var strForLoggedIn = '<li><span id="putUserNameHere" style="font-weight:bold"></span>,您好&nbsp</li>'
+		var strForLoggedIn = '<li><lable><span id="putUserNameHere" style="font-weight:bold"></span>,您好&nbsp</lable></li>'
 			+'<li><a href="zhuce.html?action=xiugai">修改资料</a></li>'
 			+'<li><a href="javascript:void logOut();">退出</a></li>';
 		var strForLoggedOff = '<li><a href="denglu.html">登录</a></li><li><a href="zhuce.html">注册</a></li>';
